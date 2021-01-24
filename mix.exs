@@ -11,16 +11,20 @@ defmodule ElixirKaffeCodealong.MixProject do
       preferred_cli_env: [
         coveralls: :test,
         "coveralls.html": :test,
-        "coveralls.json": :test,
+        "coveralls.json": :test
       ],
-      test_coverage: [tool: ExCoveralls],
+      test_coverage: [tool: ExCoveralls]
     ]
   end
 
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      extra_applications: [:logger, :kaffe]
+      extra_applications: [:logger, :kaffe],
+      mod: {ElixirKaffeCodealong.Application, []}
+      # now that we're using the Application module, this is where we'll tell it to start.
+      # We use the keyword `mod` with applications that start a supervision tree,
+      # which we configured when adding our Kaffe.Consumer to Application above.
     ]
   end
 
