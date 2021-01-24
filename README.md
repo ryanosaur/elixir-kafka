@@ -1,6 +1,6 @@
 # ElixirKaffeCodealong
 
-**TODO: Add description**
+[![codecov](https://codecov.io/gh/ryanosaur/elixir-kafka/branch/main/graph/badge.svg?token=CVB9OFUDYS)](https://codecov.io/gh/ryanosaur/elixir-kafka)
 
 ## Installation
 
